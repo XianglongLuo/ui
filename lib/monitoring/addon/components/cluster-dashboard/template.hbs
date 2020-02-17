@@ -33,11 +33,10 @@
   {{/unless}}
 
   {{nodes-live nodes=nodes}}
-
+<!--lxl-->
   <div class="row mt-0">
     {{k8s-component-status
       label="clusterDashboard.etcd"
-      showUrl=scope.currentCluster.isRKE
       healthy=etcdHealthy
       url=grafana.etcdUrl
     }}
